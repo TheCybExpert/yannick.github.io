@@ -1,0 +1,428 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color:#2d2d2d;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.My_container{
+    
+    margin: 10px 40px;
+    padding: 0 70px;
+    background-color: #141414;
+    width: 1000px;
+    text-align: justify;
+}
+
+.My_container .header{
+    
+    position: relative;
+    margin-top: 20px;
+    animation: haut 2s 
+}
+
+.My_image{
+    animation: droite 2s;
+}
+
+.My_image img{
+   float: right;
+   width: 300px;
+   height: 400px;
+   border: 1px solid #000;
+   margin-left: 30px;
+   margin-bottom: 10px;
+   box-shadow: 2px 2px 3px #000;
+   border-radius: 90px;
+   animation: imgg 2s cubic-bezier(.68,-0.55,.27,1.55)infinite;
+   animation-delay: 2s;
+}
+
+.header nav{
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.header .name{
+    position: relative;
+    top: -18px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.Y{
+    font-size: 41px;
+    color: #fa8602;
+}
+
+nav a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+   
+    margin-left: 5px;
+}
+nav a:hover{
+    color: #fa8602;
+    text-shadow: 1px 1px 1px #000;
+    transition: color 0.5s;
+}
+
+.active{
+    color: #fa8602;
+}
+
+.My_container p{
+    font-size: 18px;
+}
+
+.History{
+    margin: 50px 0 ;
+    line-height: 1.7em;
+    animation: gauche 2s;
+    color: #ffffffdf;
+}
+.History h2{
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.boutons{
+    margin: 20px 0;
+    animation: bas 2s;
+
+    
+}
+
+.boutons:hover{
+    
+}
+
+.boutons a{
+    text-decoration: none;
+    color: #ffffffd7;
+}
+
+.boutons .mail{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-right: 10px;
+    background: linear-gradient(45deg, #fa8602, #30475e);
+    transition: 0.3s;
+}
+
+.boutons .mail:hover{
+    animation: boutons 2s ease-in-out infinite;
+    background: linear-gradient(45deg, #30475e, #fa8602);
+    box-shadow: 0px 0px 10px #fa8602;
+}
+
+ .Facebook{
+    height: 60px;
+    position: relative;
+    top: 24px;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+
+
+.boutons .Facebook:hover{
+    animation: boutons 2s ease-in-out infinite;
+    box-shadow: 0 0 10px blue; 
+}
+
+.engagez-moi{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(89, 89, 248, 0.75);
+}
+
+footer {
+    background-color: #2d2d2d;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes gauche {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes droite {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes haut {
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes imgg {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-25px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes boutons {
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-25px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes bas {
+    from{
+        transform: translateY(100px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+/*Contacts*/
+
+.Myform{
+    
+    border: 1px solid #fff;
+    margin: 50px 0;
+    background: #fa86028f;
+ 
+    
+}
+.Nous_contacter{
+    text-align: center;
+    margin: 30px 0;
+  
+}
+
+.Info_texte{
+    display: flex;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    align-items: center;
+    line-height: 2rem;
+    justify-content: space-between;
+   
+}
+
+.Infos{
+    
+
+    margin-top: 10px;
+}
+
+
+.Infos label{
+    display: block;
+    margin-left: 12px;
+    width: 15px;
+}
+.Infos input{
+   
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+   
+   
+}
+
+
+
+.zone_Texte{
+    margin: 0 50px;
+    padding-top: 10px;
+}
+
+.Send{
+    display: flex;
+    justify-content: center;
+}
+
+.envoyer{
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 10px 48%;
+    background: linear-gradient(45deg, #141414, #D4D4D4);
+    
+}
+
+/*Mes projets*/
+
+.projet{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.projet_Texte{
+    
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 935px)
+{
+    My_image img{
+        
+        margin-left: 20px;
+        
+     }
+
+     
+     
+}
+
+@media screen and (max-width: 900px)
+{
+        .My_container {
+            width: 90%;
+            padding: 20px;
+        }
+
+        .My_image{
+            display: flex;
+            justify-content: center;
+        }
+
+        .My_image img {
+            float: none;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        .header .name {
+            position: relative;
+            top: -40px;
+            text-align: center;
+        }
+
+       .header nav {
+            position: relative;
+            top: -20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .Info_texte{
+          display: block;
+          
+            
+        }
+
+        .Infos {
+       
+            margin: 0 20px;
+        }
+        
+        .Infos input, textarea{
+        
+            width: 100%;
+        }
+}
+
+@media screen and (max-width: 450px)
+{
+    
+    .My_image img {
+        float: none;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+   nav a, .History p{
+    font-size: 14px;
+   }
+    
+}
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <div class="My_container">
+        <div class="header">
+            <div class="name"><span class="Y">Y</span>annick-pierre AZANDEME</div>
+            <nav class="liens">
+                <a href="index.html" >A propos</a>
+                <a href="projets.html">Projets</a>
+                <a href="#">Blog</a>
+                <a href="#" class="active">Contacts</a>
+            </nav>
+        </div>
+        <hr>
+        
+    
+    <form action="mailto:yannickpierreazandeme@gmail.com" method="post" class="Myform" name="form">
+    
+        <div class="Conteneur">
+            <div class="Nous_contacter">
+                <h2>Contactez-moi</h2>
+            </div>
+
+            <div class="Info_texte">
+                <div class="Infos">
+                    
+                    <label for="Nom">Nom:</label>
+                    <input type="text" name="nom" id="Nom" class="input" required placeholder="Votre nom">
+               
+                    <label for="Prenom">Prénom:</label>
+                    <input type="text" name="prenom" id="Prenom" class="input" required placeholder="Votre prénom">
+                
+                    <label for="Email">Email:</label>
+                    <input type="text" name="email" id="Email" class="input" required placeholder="Votre Email">
+                
+                    <label for="Entreprise">Entreprise:</label>
+                    <input type="text" name="entreprise" id="Entreprise" class="input" placeholder="Le nom de votre entreprise">
+                        
+                </div>
+        
+                <div class="zone_Texte">
+                    <legend>Votre Message:</legend>
+                    <textarea name="texte" id="texte" cols="60" rows="15" onclick="envoyer()"></textarea>
+                </div>
+
+            </div>
+            
+            <div class="Send"><input type="submit" class="envoyer" name="envoi" value="Envoyer"></div>
+        </div>
+    </form>
+</div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
